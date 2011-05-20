@@ -3,6 +3,8 @@
  *
  * Searches twitter for multiple search terms and stores them in a database.
  *
+ * See record_tweets.php and JSON_tweets.php for usage examples
+ * 
  * You'll want to attach this to a cron job.
  *
  * Here's the MySQL table structure it uses...
