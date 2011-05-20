@@ -1,40 +1,4 @@
 <?php
-/**
- * TWITTER FACTORY
- *
- * Searches twitter for multiple search terms and stores them in a database.
- *
- * You'll want to attach this to a cron job.
- *
- * Here's the MySQL table structure it uses...
- *
- * CREATE TABLE IF NOT EXISTS `tweets` (
- *   `id` bigint(20) NOT NULL,
- *   `published` varchar(100) NOT NULL,
- *   `content` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
- *   `handle` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
- *   `avatar` varchar(500) DEFAULT NULL,
- *   `parsed` varchar(10) DEFAULT NULL,
- *   PRIMARY KEY (`id`)
- * ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
- *
- * Make sure to change the variables in the db() method to connect to your database!
- *
- * @author @twombh
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
- */
 class tweetFactory{
 
   /**
